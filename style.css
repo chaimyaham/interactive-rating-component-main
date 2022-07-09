@@ -1,0 +1,194 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap'); 
+
+:root{
+    
+--White: hsl(0, 0%, 100%);
+--Light-Grey: hsl(217, 12%, 63%);
+--Medium-Grey: hsl(216, 12%, 54%);
+--Dark-Blue: hsl(213, 19%, 18%);
+--orange:hsl(25, 98%, 53%);
+--Very-Dark-Blue : hsl(216, 12%, 8%);
+--ff: 'Overpass', sans-serif;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--ff);
+    min-height: 100vh;
+    background-color: var(--Very-Dark-Blue);
+   transition: .5s all ease;
+
+}
+.rating-state {
+    width: 400px;
+    height: 410px;
+    background-color: var(--Dark-Blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: var(--White);
+    border-radius: 30px;
+    padding: 0 30px;
+
+}
+
+.rating-state h1{
+    color: var(--White);
+    font-weight:700;
+    font-size: 28px;
+
+ 
+}
+.rating-state p{
+    font-size: 15px;
+    color: var(--Light-Grey);
+    line-height: 25px;
+    margin-top: -16px;
+   
+
+}
+.thankyou-state{
+    display: block;
+}
+
+.rating-state .rating{
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.rating-state .numOfStars, .rating-state .starCont{
+    background-color: hsl(213, 18%, 22%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--Light-Grey);
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.5s all ease;
+    
+  
+}
+.rating-state .submit{
+    width: 95%;
+    height: 46px;
+    align-self: center;
+    border:none;
+    border-radius: 23px;
+    background-color: var(--orange);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: .5s all ease;
+    
+
+}
+.rating-state .numOfStars:hover{
+ background-color: var(--orange);
+ color: var(--White);
+}
+.rating-state .numOfStars:focus{
+    background-color:var(--Light-Grey);
+    color: var(--White);
+}
+
+ 
+.rating-state .submit:focus, .submit:hover{
+    color: var(--orange);
+    background-color: var(--White);
+}
+/* thankyou-state */
+.thankyou-state{
+    width: 400px;
+    height: 410px;
+    background-color: var(--Dark-Blue);
+    color: var(--White);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    text-align: center;
+    padding:30px;
+    display: none;
+    
+}
+.thankyou-state .result{
+    background-color: hsl(213, 18%, 22%);
+    color: var(--orange);
+    height: 30px;
+    width: 175px;
+    font-size: 13px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+.thankyou-state p{
+    color: var(--Light-Grey);
+    margin-top: -15px;
+    font-size: 15px;
+    line-height: 25px;
+    
+}
+.thankyou-state h1{
+    font-size: 27px;
+}
+
+.anim2,.anim1{
+    animation: ball 2s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#allSvg{
+    animation: bounce 5s infinite linear;
+}
+@keyframes ball {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}
+@keyframes bounce {
+    0%{
+        transform: translateY(0);
+
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 50px;
+    color: var(--Light-Grey);
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
