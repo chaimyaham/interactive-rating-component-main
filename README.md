@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution URL here](https://github.com/chaimyaham/interactive-rating-component-main)
-- Live Site URL: [live site URL here](hhttps://chaimyaham.github.io/interactive-rating-component-main/)
+- Live Site URL: [live site URL here](https://chaimyaham.github.io/interactive-rating-component-main/)
 
 ## My process
 
